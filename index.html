@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta http-equiv="X-UA-Compatible" content="IE=edge">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Coaching</title>
+
+ <!-- stylings -->
+<!-- <link rel="stylesheet" href="styles.css"> -->
+<style>
+ 
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: Arial, Helvetica, sans-serif;
+}
+body{
+ background: #f8f8f8;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ min-height: 100vh;
+}
+img{
+ width: 400px;
+}
+section{
+ background: #f8f8f8;
+ margin: 10px;
+ display: flex;
+}
+section >*{
+ padding: 10px;
+}
+h1{
+ font-size: 1.6rem;
+ text-align: center;
+}
+.img-container{
+ /* background-color: black; */
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ object-fit: cover;
+}
+section div:not(.img-container){
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ /* margin-right: 15px; */
+}
+form{
+ /* flex-grow: 1; */
+ display: flex;
+ width: 100%;
+
+}
+form>*{
+ flex-grow: 1;
+ padding: 10px;
+}
+input{
+ height: 40px;
+ margin-top: 30px;
+ margin-bottom: 30px;
+ margin-right: 5px;
+ border-radius: 5px;
+ border: 1px solid grey;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+input::placeholder{
+ color: grey;
+}
+.btn{
+ background: #600202;
+ box-shadow: 4px 4px 4px 1px rgba(34, 34, 34, 0.616);
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ color: #fff;
+ font-weight: bold;
+ border: none;
+}
+p{
+ color: grey;
+ text-align: center;
+ font-size: 0.76rem;
+}
+
+@media screen and (max-width:967px) {
+ section{
+  display: flex;
+  flex-direction: column;
+ }
+ h1{
+  font-size: 1.2rem;
+ }
+}
+@media screen and (max-width:533px) {
+  section{
+  display: flex;
+  flex-direction: column;
+ }
+ h1{
+  font-size: 1rem;
+ }
+ .btn{
+  font-size: 0.7rem;
+ }
+ form{
+  display: flex;
+  flex-direction: column;
+ }
+ input{
+  margin: 10px 0;
+ }
+}
+</style>
+</head>
+<body>
+ <section>
+  <div class="img-container"><img src="https://www.louismorriscoaching.com/wp-content/uploads/2021/04/036-6x9-Standing-Ereader-Tablet-Coffee-Cup-COVERVAULT-1024x683.png" alt=""></div>
+
+  <div>
+   <h1>Download the FREE COACHING WORKSHEET & Discover 10 Powerful Questions to Help You Get Your Groove Back in Your Relationship!</h1>
+   <form >
+    <input type="text" placeholder="First Name">
+    <input type="email" placeholder="Email">
+    <input class="btn" type="submit" value="Download Now">
+   </form>
+   <p>*By signing up for my free worksheet you’ll also be joining my mailing list where I send my best tips, helpful content, and service offers. I never sell your information and you can easily unsubscribe at any time.</p>
+  </div>
+ </section>
+
+
+</body>
+</html>
